@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Dicionário Inteligente</h1>
+        <p>Exemplo da estrutura Map (mapeando objetos com chave/valor)</p>
+        <!-- Área de Cadastro -->
+        <div class="section-cadastro">
+            <h2>Cadastrar palavras:</h2>
+            <input type="text" id="chaveNova" placeholder="Digite a palavra chave">
+            <input type="text" id="valorNovo" placeholder="Preencha aqui o significado/sinônimo">
+            <button id="btnCadastrar" onclick="cadastrarDefinicao()">Adicionar ao dicionário</button>
+        </div>
+        <!-- Área de busca -->
+        <div class="section-consulta">
+            <h2>Consultar:</h2>
+            <input type="text" id="termoBusca" placeholder="Pesquisar a palavra ...">
+            <button id="btnBuscar" onclick="pesquisarTermo()">Buscar definição</button>
+            <p id="resultadoBusca"></p>
+        </div>
+        <!-- Aqui vai aparecer o resultado -->
+        <div id="resultadoDicionario" class="result-box"></div>
+    </div>
+</body>
+<script src="dicionario.js"></script>
+</html>
