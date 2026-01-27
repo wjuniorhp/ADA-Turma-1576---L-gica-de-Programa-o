@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>🎲 Mestre dos dados</h1>
+
+        <div class="input-group">
+            <label for="qtd">Quantidade de Dados</label>
+            <input type="number" id="qtd" value="3" max="100">
+        </div>
+
+        <div class="input-group">
+            <label for="lados">Lados do Dado</label>
+            <input type="number" id="lados" value="6" >
+        </div>
+
+        <button id="jogar" onclick="jogar()">Rolar Dados!</button>
+
+        <!-- Aqui serão exibidos os dados rolados -->
+        <div id="resultado"></div>
+    </div>
+</body>
+<script src="logica.js"></script>
+<script src="interface.js"></script>
+</html>
